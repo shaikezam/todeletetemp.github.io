@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+
+  <head>
+    <meta charset="utf-8" />
+    <title>AngularJS Plunker</title>
+    <script>document.write('<base href="' + document.location + '" />');</script>
+    <link rel="stylesheet" href="style.css" />
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.0/angular.min.js"></script>
+    <script src="//code.angularjs.org/1.4.0/angular-route.min.js"></script>
+    
+    <script src="app.js"></script>
+  </head>
+
+  <body ng-controller="mainController">
+    <p>Hello {{name}}!</p>
+    
+    <div class="row">
+    <a href="#/main">Main Content</a>  
+    <a href="#/second">Second Content</a>  
+  </div>
+
+    <div class="row">
+      <div class="col-md-12">
+        <div ng-view></div>
+      </div>
+    </div>
+
+    <hr>
+    
+  </body>
+
+</html>
